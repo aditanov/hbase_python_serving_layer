@@ -1,0 +1,309 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/**************menu**************/
+/* Logo */
+nav .nav-wrapper .brand-logo img {
+  height: 50px;
+}
+
+/* Dropdown list color */
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #fb8c00 !important;
+}
+
+/* pagination menu nav side */
+.pagination li u li a {
+  color: #444;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  line-height: 30px;
+}
+/**************menu**************/
+/* font */
+.no-uppercase {
+     text-transform: none;
+}
+
+/* button */
+.col.s12 > .btn {
+   width: 100%;
+}
+
+/* padding */
+.padding-div-small{
+  padding: 0px;
+}
+
+/* wordcloud */
+.wordcloud {
+        height: 10em;
+}
+
+/* maps */
+.maps {
+  height: 200px;
+}
+
+/* footer */
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+ main {
+   flex: 1 0 auto;
+ }
+
+/* div berada di center horizontal dan vertical*/
+.div-center {
+  position:;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+}
+
+/* form input */
+.input-field input[type=password]:focus + label {
+    color:rgba(36,107,187);
+}
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid rgba(36,107,187);
+    box-shadow: 0 1px 0 0 rgba(36,107,187);
+}
+.input-field input[type=text]:focus + label {
+    color:rgba(36,107,187);
+}
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid rgba(36,107,187);
+    box-shadow: 0 1px 0 0 rgba(36,107,187);
+}
+.input-field input[type=email]:focus + label {
+    color: rgba(36,107,187);
+}
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid rgba(36,107,187);
+    box-shadow: 0 1px 0 0 rgba(36,107,187);
+}
+.input-field input[type=date]:focus + label {
+    color: rgba(36,107,187);
+}
+.input-field input[type=date]:focus {
+    border-bottom: 1px solid rgba(36,107,187);
+    box-shadow: 0 1px 0 0 rgba(36,107,187);
+}
+.input-field input[type=submit]{
+    color: rgba(36,107,187);
+}
+.input-field input[type=submit]:hover{
+    color: rgba(255,255,255);
+}
+.input-field .prefix.active {
+     color: rgba(36,107,187);
+}
+.select-wrapper {
+	ul {
+		li > span {
+			color: rgba(36,107,187);
+		}
+	}
+}
+.picker__date-display, .picker__weekday-display{
+    background-color: rgba(36,107,187);
+}
+.picker__day.picker__day--infocus.picker__day--selected.picker__day--highlighted {
+       background-color: rgba(36,107,187);
+}
+button.picker__today, button.picker__close {
+        color: rgba(36,107,187);
+}
+
+/* horizontall line */
+.border-top-bottom{
+  border-top: 2px solid #42a5f5 ;
+  border-bottom: 2px solid #42a5f5 ;
+}
+
+/* scroll */
+.scroll-y-berita{
+  height: 850px; overflow-y: scroll;
+}
+.scroll-y-sosmed{
+  height: 500px; overflow-y: scroll;
+}
+
+/* dataTable */
+.dataTables_length select {
+   background-color: red;
+}
+.dataTables_filter input:focus{
+  background-color: rgba(187, 222, 251,0.7);
+}
+
+/* no margin*/
+.one-margin-padding {
+  margin: 0px;
+  padding: 1px;
+}
+
+.no-margin-padding {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* horizontal line color*/
+.hr-grey{
+  color:#f5f5f5;
+  background-color:#f5f5f5;
+/*  border: 0.1px solid #e0e0e0;*/
+}
+
+.border-right{
+  border-right: 0.1px solid #e0e0e0;
+}
+
+.border-top {
+  border-top: 0.1px solid #e0e0e0;
+}
+
+.border-bottom {
+  border-bottom: 0.1px solid #e0e0e0;
+}
+
+.border-top-orange-darken-4 {
+  border-top: 4.5px solid #e65100;
+}
+
+.border-top-cyan-darken-4 {
+  border-top: 4.5px solid #00838f;
+}
+
+.border-top-grey-lighten-1 {
+  border-top: 4.5px solid #bdbdbd;
+}
+
+.border-green-darken-1{
+  border-top: 4.5px solid #43a047;
+}
+
+.border-top-blue-lighten-3{
+  border-top: 4.5px solid #90caf9;
+}
+
+.border-top-blue-accent-4{
+  border-top: 4.5px solid #2962ff;
+}
+
+.border-top-orange-lighten-3{
+  border-top: 4.5px solid #ffcc80;
+}
+.scroll {
+  height: 300px;
+  overflow: auto;
+}
+
+.scroll2 {
+  height: 200px;
+  overflow: auto;
+}
+
+.scroll5 {
+  height: 500px;
+  overflow: auto;
+}
+
+.scroll-berita-terkini {
+  height: 200px;
+  overflow: auto;
+}
+
+.select-dropdown{
+    overflow: auto;
+    height: 200px;
+}
+
+/*logo*/
+.brand-logo{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+
+/*############################### dari materialize ########################################*/
+.card.horizontal {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card.horizontal.small .card-image, .card.horizontal.medium .card-image, .card.horizontal.large .card-image {
+  height: 100%;
+  max-height: none;
+  overflow: visible;
+}
+
+.card.horizontal.small .card-image img, .card.horizontal.medium .card-image img, .card.horizontal.large .card-image img {
+  height: 100%;
+}
+
+.card.horizontal .card-image {
+  max-width: 50%;
+}
+
+.card.horizontal .card-image img {
+  border-radius: 2px 0 0 2px;
+  max-width: 100%;
+  width: auto;
+}
+
+.card.horizontal .card-stacked {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.card.horizontal .card-stacked .card-content {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.collapsible li.disabled .collapsible-body {
+    display: none !important; /*or using id of the app to avoid the use of !important*/
+}
+
+.collapsible li.disabled .collapsible-header {
+    background: rgb(221,221,221);
+}
+#grad1 {
+    background: #1565c0; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #1565c0 , #90caf9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #1565c0, #90caf9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #1565c0, #90caf9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #1565c0 , #90caf9); /* Standard syntax (must be last) */
+}

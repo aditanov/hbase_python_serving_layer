@@ -1,0 +1,557 @@
+{% include "menu_publik_2.html" %}
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- START CONTENT -->
+            <section id="content">
+
+                <!--start container-->
+                <div class="container">
+
+                    <!--chart dashboard start-->
+                    <div id="chart-dashboard">
+                        <div class="row">
+                            <!-- disini -->
+                          <div class="col s12">
+                            <div class="col s12 m6 l3">
+                              <div class="card horizontal hoverable">
+                                <div class="card-image">
+                                  <img src="images/programprioritas.png">
+                                </div>
+                                <div class="card-action left">
+                                  <p class="no-margin-padding">45% PP 1</p>
+                                  <p class="no-margin-padding">30% PP 2</p>
+                                  <p class="no-margin-padding">25% PP 3</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                              <div class="card horizontal hoverable">
+                                <div class="card-image">
+                                  <img src="images/medsos.png">
+                                </div>
+                                <div class="card-action">
+                                  <p class="no-margin-padding">#Hastag1</p>
+                                  <p class="no-margin-padding">#Hastag2</p>
+                                  <p class="no-margin-padding">#Hastag3</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                              <div class="card horizontal hoverable">
+                                <div class="card-image">
+                                  <img src="images/temaberita.png">
+                                </div>
+                                <div class="card-action">
+                                  <p class="no-margin-padding">Tema Media Online</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col s12 m6 l3">
+                              <div class="card horizontal hoverable">
+                                <div class="card-image">
+                                  <img src="images/penulis.png">
+                                </div>
+                                <div class="card-action">
+                                  <p class="no-margin-padding">Penulis 1</p>
+                                  <p class="no-margin-padding">Penulis 2</p>
+                                  <p class="no-margin-padding">Penulis 3</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                            <!--END KESIMPULAN-->
+                            <!-- laporan isu harian-->
+                          <div class="col s12">
+                            <div class="col s12"><!-- dev col-->
+                              <div class="card hoverable border-top-grey-lighten-1">
+                                <div class="card-title">
+                                  <h6 class="grey-text"><b>&nbsp;&nbsp;Laporan Isu Harian (19 Juli 2017)</b></h6>
+                                </div>
+                                <div class="card-action one-margin-padding">
+                                  <div class="col s12 m12 l7">
+                                    <h6 class="center"><b>Program Prioritas</b></h6>
+                                    <canvas id="ChartProgramPrioritas" height="90%"></canvas>
+                                  </div>
+                                  <div class="col s12 m12 l5 center">
+                                    <h6><b>Top isu</b></h6>
+                                    <div class="col s12 m12 wordcloud" id="wordcloud_top_isu"></div>
+                                  </div>
+                                </div>
+                                <div class="card-content one-margin-padding">
+                                  <div class="col s12 border-top">
+                                    <div class="col s12"> <br ></div>
+                                    <div class="col s12 m6 l3 border-right center">
+                                      <p class="red-text"><i class="tiny material-icons red-text">trending_down</i>18%</p>
+                                      <h6>Perbandingan isu<h6>
+                                    </div>
+                                    <div class="col s12 m6 l3 border-right center">
+                                      <p class="green-text"><i class="tiny material-icons green-text">trending_up</i>7%</p>
+                                      <h6>Tendesi Positif<h6>
+                                    </div>
+                                    <div class="col s12 m6 l3 border-right center">
+                                      <p class="red-text"><i class="tiny material-icons red-text">trending_down</i>30%</p>
+                                      <h6>Tendensi Negatif<h6>
+                                    </div>
+                                    <div class="col s12 m6 l3 center">
+                                      <p class="orange-text"><i class="tiny material-icons orange-text">trending_flat</i>0%</p>
+                                      <h6>Tendensi Netral<h6>
+                                    </div>
+                                    <div class="col s12 "><br/></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div><!--dev col-->
+                          </div>
+                            <!-- end laporan isu harian-->
+                            <!-- trends-->
+                            <div class="col s12">
+                              <div class="col s12 m12 l8">
+                                <div class="card border-green-darken-1  hoverable">
+                                  <div class="card-title">
+                                    <h6 class="grey-text"><b>&nbsp;&nbsp;Tren (26 Juni - 19 Juli 2017)</b></h6>
+                                  </div>
+                                  <div class="card-action">
+                                    <div class="col s12 m12 l9 center">
+                                      <b>Grafik Trends</b><br/>
+                                      <!--<canvas class="red" id="lineChart" height="90%"></canvas>-->
+                                      <canvas id="lineChart" height="450" width="800"></canvas>
+                                    </div>
+                                  </div>
+                                  <div class="col s12 m12 l3 green darken-1 white-text center">
+                                    <p>
+                                      <i class="tiny material-icons">equalizer</i><b> Isu 3 Minggu Terakhir </b><br/>
+                                      Isu Berita
+                                    </p>
+                                    <p>
+                                      <i class="tiny material-icons">equalizer</i><b> Isu 1 Minggu Terakhir </b><br/>
+                                      Isu Berita
+                                    </p>
+                                    <p>
+                                      <i class="tiny material-icons">equalizer</i><b> Isu 3 Hari Terakhir </b><br/>
+                                      Isu Berita
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!--<div class="col s12 m12 l4">-->
+                              <div class="col s12 m6 l4">
+                                <div class="card horizontal amber darken-4 white-text hoverable">
+                                  <div class="card-title no-margin-padding">
+                                    <h6 class="blue-grey-text text-lighten-5">&nbsp;&nbsp; Polhukam</h6>
+                                  </div>
+                                  <div class="col s7 card-action no-margin-padding">
+                                    <p class="no-margin-padding"><b>Tema satu</b></p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col s12 m6 l4">
+                                <div class="card horizontal green darken-4 white-text hoverable">
+                                  <div class="card-title no-margin-padding">
+                                    <h6 class="blue-grey-text text-lighten-5">&nbsp;&nbsp; Maritim</h6>
+                                  </div>
+                                  <div class="col s7 card-action no-margin-padding">
+                                    <p class="no-margin-padding"><b>Tema satu</b></p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col s12 m6 l4">
+                                <div class="card horizontal red darken-1 white-text hoverable">
+                                  <div class="card-title no-margin-padding">
+                                    <h6 class="blue-grey-text text-lighten-5">&nbsp;&nbsp; PMK</h6>
+                                  </div>
+                                  <div class="col s7 card-action no-margin-padding">
+                                    <p class="no-margin-padding"><b>Tema satu</b></p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col s12 m6 l4">
+                                <div class="card horizontal blue darken-1 white-text hoverable">
+                                  <div class="card-title no-margin-padding">
+                                    <h6 class="blue-grey-text text-lighten-5">&nbsp;&nbsp; Perekonomian</h6>
+                                  </div>
+                                  <div class="col s7 card-action no-margin-padding">
+                                    <p class="no-margin-padding"><b>Tema satu</b></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                              <!-- end trends-->
+
+                              <!-- end kutipan, narasumber, penulis, maps dan berita terkini -->
+                              <div class="col s12">
+                                <!--kutipan media-->
+                                <div class="col s12 m6 l4">
+                                  <div class="card border-top-orange-darken-4 hoverable">
+                                    <div class="card-title">
+                                      <h6 class="grey-text"><b>&nbsp;&nbsp;Kutipan Media Online</b></h6>
+                                    </div>
+                                    <div class="card-action scroll">
+                                      <p>
+                                        <i class="material-icons tiny orange-text text-darken-4">person</i>
+                                        <b class="orange-text text-darken-4" >Nama Sumber</b><br/>
+                                        "Kutipan berita kutipan berita kutipan berita" <br>
+                                        <span class="grey-text right">Nama Tema | 09:13 </span><br/>
+                                      </p>
+                                      <p>
+                                        <i class="material-icons tiny orange-text text-darken-4">person</i>
+                                        <b class="orange-text text-darken-4">Nama Sumber</b><br/>
+                                        "Kutipan berita kutipan berita kutipan berita" <br>
+                                        <span class="grey-text right">Nama Tema | 09:13 </span><br/>
+                                      </p>
+                                      <p>
+                                        <i class="material-icons tiny orange-text text-darken-4">person</i>
+                                        <b class="orange-text text-darken-4">Nama Sumber</b><br/>
+                                        "Kutipan berita kutipan berita kutipan berita" <br>
+                                        <span class="grey-text right">Nama Tema | 09:13 </span>
+                                      </p>
+                                    </div>
+                                    <br/>
+                                  </div>
+                                </div>
+                                <!--end kutipan media-->
+                                <!--narasumber-->
+                                <div class="col s12 m6 l4">
+                                  <div class="card border-top-cyan-darken-4 hoverable">
+                                    <div class="card-title">
+                                      <h6 class="grey-text"><b>&nbsp;&nbsp;Top Narasumber</b></h6>
+                                    </div>
+                                    <div class="card-action scroll">
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                      <div class="col s12 m12 l6 center">
+                                        <p>
+                                          <i class="material-icons small cyan-text text-darken-3">person</i><br/> <b>Nama Person</b>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <br>
+                                  </div>
+                                </div>
+                                <!--end Narasumber-->
+                                <!--top penulis-->
+                                <div class="col s12 m6 l4">
+                                  <div class="card border-top-grey-lighten-1 hoverable">
+                                    <div class="card-title">
+                                      <h6 class="grey-text">&nbsp;&nbsp;<b>Top Penulis</b></h6>
+                                    </div>
+                                    <div class="card-action center scroll">
+                                      <canvas id="ChartTopPenulis"></canvas>
+                                      <hr class="col s12 hr-grey no-margin-padding "/>
+                                      <p class="no-margin-padding"><b>Nama Penulis<br><span class="grey-text">31%</span></b></p>
+                                      <hr class="col s12 hr-grey no-margin-padding "/>
+                                      <hr class="col s12 hr-grey"/>
+                                      <p class="no-margin-padding"><b>Nama Penulis<br><span class="grey-text">12%</span></b></p>
+                                      <hr class="col s12 hr-grey no-margin-padding "/>
+                                    </div>
+                                    <br/>
+                                  </div>
+                                </div>
+                                <!--end top penulis-->
+                                <!--maps-->
+                                <div class="col s12 m6 l8">
+                                  <div class="card border-top-blue-lighten-3 hoverable">
+                                    <div class="card-title">
+                                      <h6 class="grey-text">&nbsp;&nbsp;<b>Maps</b></h6>
+                                    </div>
+                                    <div class="card-action">
+                                      <div id="map" class="col s12 maps"></div>
+                                    </div>
+                                    <br/>
+                                  </div>
+                                </div>
+                                <!--end maps-->
+                                <!--berita terkini-->
+                                <div class="col s12 m12 l4">
+                                  <div class="col s12 card border-top-blue-accent-4 hoverable">
+                                    <div class="card-title">
+                                      <h6 class="grey-text"><b>Berita Terkini</b></h6>
+                                    </div>
+                                    <div class="card-action scroll-berita-terkini">
+                                      <p class="no-margin-padding">
+                                        <b>Judul Berita Terkini Judul Berita Terkini Judul Berita Terkini</b>
+                                        <span class="grey-text right">20 Juli 2017 | 09:13 </span>
+                                      </p><br/>
+                                      <p class="no-margin-padding">
+                                        <b>Judul Berita Terkini Judul Berita Terkini</b>
+                                        <span class="grey-text right">20 Juli 2017 | 09:13 </span>
+                                      </p><br/>
+                                      <p class="no-margin-padding">
+                                        <b>Judul Berita Terkini Judul Berita Terkini</b>
+                                        <span class="grey-text right">20 Juli 2017 | 09:13 </span>
+                                      </p><br/>
+                                      <p class="no-margin-padding">
+                                        <b>Judul Berita Terkini Judul Berita Terkini</b>
+                                        <span class="grey-text right">20 Juli 2017 | 09:13 </span>
+                                      </p><br/>
+                                      <p class="no-margin-padding">
+                                        <b>Judul Berita Terkini Judul Berita Terkini</b>
+                                        <span class="grey-text right">20 Juli 2017 | 09:13 </span>
+                                      </p><br/>
+                                    </div><br/>
+                                  </div>
+                                </div>
+                                <!--end berita terkini-->
+                              </div>
+                              <!-- end kutipan, narasumber, penulis, maps dan berita terkini -->
+                              <!--maps dan berita terkini-->
+                              <div class="col s12">
+                              </div>
+                              <!--end maps dan berita terkini-->
+                        </div>
+                    </div>
+                    <!--chart dashboard end-->
+                </div>
+                <!--end container-->
+            </section>
+            <!-- END CONTENT -->
+
+
+        </div>
+        <!-- END WRAPPER -->
+
+    </div>
+    <!-- END MAIN -->
+
+
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START FOOTER -->
+<?php include "footer_beranda.php";?>
+    <!-- END FOOTER -->
+
+
+    <!-- ================================================
+    Scripts
+    ================================================ -->
+
+    <!-- jQuery Library -->
+
+    <!--materialize js-->
+    <script type="text/javascript" src="http://demo.geekslabs.com/materialize/v3.1/js/materialize.min.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="http://demo.geekslabs.com/materialize/v3.1/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="http://demo.geekslabs.com/materialize/v3.1/js/plugins.min.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="http://demo.geekslabs.com/materialize/v3.1/js/custom-script.js"></script>
+    <!-- Toast Notification -->
+    <script type="text/javascript">
+    //*************************************** diagram program prioritas **********************************************
+    var ctx = document.getElementById("ChartProgramPrioritas");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels:[
+              "Energi", "Pariwisata", "Undang-Undang", "Perempuan dan Anak", "Pangan",
+             "Reformasi Birokrasi", "Internasional", "Kaum Marjinal", "Maritim",
+             "Kesehatan", "Teknologi", "Industri", "Pendidikan", "Desa",
+             "Pengentasan Kemiskinan", "Infrastruktur", "Hutan"
+           ],
+            datasets: [{
+                label: '# of Votes',
+                data: [1, 3, 5, 2, 3, 12, 9, 3, 5, 2, 3, 12, 9, 3, 5, 2, 3],
+                backgroundColor: [
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)',
+                  'rgba(0, 78, 155, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)',
+                    'rgba(0, 78, 155, 0.7)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+          legend: {
+              display: false
+          },
+          tooltips: {
+            callbacks: {
+               label: function(tooltipItem) {
+                      return tooltipItem.yLabel;
+                }
+            }
+          },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        display:false
+                    }
+                }]
+            }
+        }
+    });
+    //*********************************** end diagram program prioritas ********************************************
+    //******************************************* diagram trend ****************************************************
+    var ctx3 = document.getElementById("lineChart").getContext("2d");
+    var chartColors = {
+      red: 'rgb(255, 99, 132)',
+      orange: 'rgb(255, 159, 64)',
+      yellow: 'rgb(255, 205, 86)',
+      green: 'rgb(75, 192, 192)',
+      blue: 'rgb(54, 162, 235)',
+      purple: 'rgb(153, 102, 255)',
+      grey: 'rgb(231,233,237)'
+    };
+
+    var lineChart = new Chart(ctx3, {
+      type: 'line',
+      data: {
+          labels: ["30 Juni", "7 Juli", "14 Juli", "19 Juli" ],
+          datasets: [
+              {
+                label: "Polhukam",
+                backgroundColor: chartColors.red,
+                borderColor : chartColors.red,
+                data: [10, 11, 20, 18, 18],
+                fill: false,
+              },
+              {
+                  label: "Maritim",
+                  backgroundColor: chartColors.orange,
+                  borderColor : chartColors.orange,
+                  data: [3, 5, 7, 11, 11],
+                  fill: false,
+              },
+              {
+                  label: "PMK",
+                  backgroundColor: chartColors.green,
+                  borderColor : chartColors.green,
+                  data: [7, 3, 5, 11, 16, 17],
+                  fill: false,          },
+              {
+                  label: "Perekonomian",
+                  backgroundColor: chartColors.blue,
+                  borderColor : chartColors.blue,
+                  data: [11, 13, 14, 17, 17],
+                  fill: false,
+              }
+          ]
+      }
+    });
+    //***************************************** end diagram trend **************************************************
+    //**************************************** diagram Top Penulis *************************************************
+    var ctx2 = document.getElementById("ChartTopPenulis").getContext('2d');
+    var myChart = new Chart(ctx2, {
+      type: 'pie',
+      data: {
+        labels: ["Penulis 1", "Penulis 2", "Penulis 3", "Penulis 4", "Penulis 5",
+                 "Penulis 6", "Penulis 7", "Penulis 8", "Penulis 9",  "Penulis 10"],
+        datasets: [{
+          backgroundColor: [
+            "#d7ccc8",
+            "#b9f6ca",
+            "#e1bee7",
+            "#ffe0b2",
+            "#c8e6c9",
+            "#82b1ff",
+            "#f0f4c3",
+            "#b3e5fc",
+            "#c5cae9",
+            "#ffcdd2"
+          ],
+          data: [12, 19, 3, 17, 28, 24, 7, 28, 24, 7]
+        }]
+      },
+      options: {
+               legend: {
+                  display: false
+               },
+               tooltips: {
+                  enabled: true
+               }
+          }
+    });
+    //*************************************** end diagram Top Penulis ********************************************
+    //******************************************* wordcloud top isu *************************************************
+    var word_list = [
+      {text: "isusatu", weight: 5, link: {href: "#priode_dari_2_hari_sebelum_sampai_hari_ini", target: "_blank"}},
+      {text: "isudua", weight: 4, link: {href: "#priode_dari_2_hari_sebelum_sampai_hari_ini", target: "_blank"}},
+      {text: "isutiga", weight: 3, link: {href: "#priode_dari_2_hari_sebelum_sampai_hari_ini", target: "_blank"}},
+      {text: "isuempat", weight: 2, link: {href: "#priode_dari_2_hari_sebelum_sampai_hari_ini", target: "_blank"}},
+      {text: "isulima", weight: 1, link: {href: "#priode_dari_2_hari_sebelum_sampai_hari_ini", target: "_blank"}}
+    ];
+    $(function() {
+      $("#wordcloud_top_isu").jQCloud(word_list);
+    });
+    //******************************************* end wordcloud top isu *************************************************
+    </script>
+
+
+
+
+</body>
+
+</html>

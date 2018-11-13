@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!--================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 3.1
+	Author: GeeksLabs
+	Author URL: http://www.themeforest.net/user/geekslabs
+================================================================================ -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+    <title>SIMONA</title>
+
+    <link rel="apple-touch-icon-precomposed" href="http://demo.geekslabs.com/materialize/v3.1/images/favicon/apple-touch-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="http://demo.geekslabs.com/materialize/v3.1/images/favicon/mstile-144x144.png">
+    <!-- For Windows Phone -->
+
+    <!-- CORE CSS-->
+ <link rel="stylesheet" href="{% static '/assets/css/template/materialize.min.css' %}" type = "text/css"/>
+
+
+    <link href="http://demo.geekslabs.com/materialize/v3.1/css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <!-- Custome CSS-->
+    <link href="http://demo.geekslabs.com/materialize/v3.1/css/custom/custom.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="http://demo.geekslabs.com/materialize/v3.1/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="http://demo.geekslabs.com/materialize/v3.1/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="http://demo.geekslabs.com/materialize/v3.1/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
+
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ <link rel="stylesheet" href="{% static '/assets/css/style.css' %}" type = "text/css"/>
+
+    <!-- javascript -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
+    <!-- Chart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <!-- word cloud -->
+ <link rel="stylesheet" href="{% static '/assets/css/jqcloud.css' %}" type = "text/css"/>
+   
+    
+    <script type="text/javascript" src="{% static '/assets/js/jqcloud-1.0.4.js' %}"></script>
+
+
+</head>
+
+<body class="blue-grey lighten-5">
+    <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START HEADER -->
+    <header id="header" class="page-topbar">
+        <!-- start header nav-->
+        <div class="navbar-fixed">
+            <nav class="navbar-color blue darken-4">
+                <div class="nav-wrapper">
+                    <ul class="left">
+                      <li>
+                        <h1 class="logo-wrapper">
+                          <a href="#index" class="brand-logo darken-1">SIMONA</a>
+                        </h1>
+                      </li>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                          <a class="waves-effect waves-block waves-light">
+                            <i class="material-icons">home</i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);" class="waves-effect waves-block waves-light translation-button"  data-activates="translation-dropdown">
+                            <i class="material-icons">search</i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);" class="waves-effect waves-block waves-light notification-button" data-activates="notifications-dropdown">
+                            <i class="material-icons">account_circle</i>
+                          </a>
+                        </li>
+                    </ul>
+                    <!-- translation-button -->
+                    <ul id="translation-dropdown" class="dropdown-content">
+                      <li>
+                        <a href="#!">
+                          <span class="language-select one-margin-padding"><br/>Pencarian Media Online</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#!">
+                          <span class="language-select one-margin-padding"><br/>Pencarian Media Sosial</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- notifications-dropdown -->
+                    <ul id="notifications-dropdown" class="dropdown-content">
+                      <li>
+                        <h5>NAMA USER</h5>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="#!">Ubah password</a>
+                      </li>
+                      <li>
+                        <a href="halaman_login_baru.php">Logout</a>
+                      </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- end header nav-->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- START MAIN -->
+    <div id="main">
+        <!-- START WRAPPER -->
+        <div class="wrapper">
+
+            <!-- START LEFT SIDEBAR NAV-->
+            <aside id="left-sidebar-nav" class="">
+              <ul id="slide-out" class="side-nav fixed leftside-navigation">
+                <li class="user-details cyan darken-2">
+                  <div class="row">
+                      <div class="col col s4 m4 l4">
+                          <img src="{% static '/assets/images/account.png' %}" alt="" class="circle responsive-img valign profile-image">
+                      </div>
+                      <div class="col col s8 m8 l8">
+                          <a class="waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">
+                            <span>User Name</span>
+                          </a>
+                          <p class="user-roal">Hak Akses</p>
+                      </div>
+                  </div>
+                </li>
+                <li class="bold active ">
+                  <a href="#dashboard" class="waves-effect waves-cyan">
+                    Dashboard
+                  </a>
+                </li>
+                <!--disini-->
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion listItemNoIcon" data-role='collapsible' data-collapsed='false'>
+                      <li class="bold">
+                        <a class="collapsible-header waves-effect waves-cyan">
+                          SIMONA
+                        </a>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="#monitoring_media_online">Pencarian Media Online</a></li>
+                            <li><a href="#monitoring_media_sosial">Pencarian Media Sosial</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                </li>
+                <!--end disini-->
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion listItemNoIcon" data-role='collapsible' data-collapsed='false'>
+                      <li class="bold">
+                        <a class="collapsible-header waves-effect waves-cyan">
+                          Database
+                        </a>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="#konten">Konten</a></li>
+                            <li><a href="#jejaring">Jejaring</a></li>
+                            <li><a href="#peta">Peta</a></li>
+                            <li><a href="#khalayak">Khalayak</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                </li>
+                <li class="bold">
+                  <a href="#" class="waves-effect waves-cyan">
+                    Agenda Setting
+                  </a>
+                </li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion listItemNoIcon" data-role='collapsible' data-collapsed='false'>
+                      <li class="bold">
+                        <a class="collapsible-header waves-effect waves-cyan">
+                          Kalender Event
+                        </a>
+                        <div class="collapsible-body">
+                          <ul>
+                            <li><a href="#pre">Pre-Event</a></li>
+                            <li><a href="#post">Post-Event</a></li>
+                            <li><a href="#live">Live-Event</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                </li>
+                <li class="bold">
+                  <a href="#" class="waves-effect waves-cyan">
+                    Hasil Survey
+                  </a>
+                </li>
+                <li class="bold">
+                  <a href="#" class="waves-effect waves-cyan">
+                    Widget
+                  </a>
+                </li>
+                <li class="bold">
+                  <a href="#" class="waves-effect waves-cyan">
+                    E-PIP
+                  </a>
+                </li>
+              </ul>
+              <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only blue darken-4">
+                <i class="material-icons">menu</i>
+              </a>
+            </aside>
+            <!-- END LEFT SIDEBAR NAV-->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
